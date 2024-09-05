@@ -89,6 +89,7 @@ dataset = version.download("yolov9")
 **Train Model**
 
 Melakukan training menggunakan model gelan compact
+**FOOTBALL DATASET**
 ```python
 %cd {HOME}/yolov9
 
@@ -150,6 +151,25 @@ for image_path in glob.glob(f'{HOME}/yolov9/runs/detect/exp6/*.jpg')[:2]:
 ![image](https://github.com/user-attachments/assets/4f59cbb1-8e54-452e-bcd4-398a2fb099e8)
 
 
+**HELMET DATASET**
+![image](https://github.com/user-attachments/assets/821ee2b2-4694-46de-8dbc-e13f7f9822c9)
+
+
+![image](https://github.com/user-attachments/assets/0faf5da3-26b7-4d74-abb5-c55bc01db3ca)
+![image](https://github.com/user-attachments/assets/251a0edc-891e-4ac1-866f-8d2682daf42f)
+
+Helmet to Helmet (0.99): Artinya 99% dari objek yang merupakan helmet terprediksi dengan benar sebagai helmet.<br>
+Background to Helmet (1.00): Ini bagian yang menunjukkan masalah, di mana background diprediksi sebagai helmet sebanyak 100%.
+
+![image](https://github.com/user-attachments/assets/860a8179-e793-42d5-9f8e-71b1a0b45a33)
+
+**VALIDATE CUSTOM MODEL**
+![image](https://github.com/user-attachments/assets/c576d204-78fd-4ef6-b6ff-be7cc76f2191)
+
+**INFERENCE WITH CUSTOM MODEL**
+![image](https://github.com/user-attachments/assets/8b658e29-88c4-4df2-b125-70df38de4e27)
+
+Ketika dilatih, model mungkin belajar terlalu spesifik dari data helmet dan background di training, tetapi saat diuji di data yang belum pernah dilihat (inference), model cenderung menganggap background sebagai helmet.
 
 
 
