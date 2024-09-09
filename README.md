@@ -1,5 +1,7 @@
 # HowToTrainYOLOv9
 
+How to Train YOLO from Local : https://github.com/andirayulia/HowToTrainYOLOv9fromLocal/blob/main/README.md#howtotrainyolov9fromlocal
+
 **Preparation**
 
 Membuat konstanta (HOME) untuk menyimpan path direktori utama
@@ -38,6 +40,7 @@ e = extended
 ```
 
 Dari model tersebut, dapat dilihat bahwa model dengan versi extended memiliki ukuran memori yang lebih besar, dimana yolov9-e memiliki ukuran paling besar yaitu 140 MB
+
 ![image](https://github.com/user-attachments/assets/41e3334e-d529-4e36-a2a9-d3ecb3e6e51c)
 
 
@@ -167,6 +170,7 @@ Background to Helmet (1.00): Ini bagian yang menunjukkan masalah, di mana backgr
 ![image](https://github.com/user-attachments/assets/c576d204-78fd-4ef6-b6ff-be7cc76f2191)
 
 **INFERENCE WITH CUSTOM MODEL**
+
 ![image](https://github.com/user-attachments/assets/8b658e29-88c4-4df2-b125-70df38de4e27)
 
 Ketika dilatih, model mungkin belajar terlalu spesifik dari data helmet dan background di training, tetapi saat diuji di data yang belum pernah dilihat (inference), model cenderung menganggap background sebagai helmet.
